@@ -143,11 +143,16 @@ export default function TransactionTable(props: TransactionTableProps) {
     setOrderBy(property);
   };
 
-  const handleChangePage = (_: React.MouseEvent<HTMLButtonElement> | null, newPage: number): void => {
+  const handleChangePage = (
+    _: React.MouseEvent<HTMLButtonElement> | null,
+    newPage: number
+  ): void => {
     setPage(newPage);
   };
 
-  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+  const handleChangeRowsPerPage = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
