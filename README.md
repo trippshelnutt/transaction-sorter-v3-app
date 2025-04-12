@@ -1,54 +1,19 @@
-# React + TypeScript + Vite
+# Transaction Sorter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+This is the app for the Transaction Sorter project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It was built to handle sorting split transactions from YNAB by category that didn't sort according to the split value of the category. For example, if a transaction was $20 total, with $15 Groceries, and $5 Dining Out, when sorting Grocery transactions, YNAB would sort by the $20 value instead of the $15 Grocery portion.
 
-## Expanding the ESLint configuration
+## Status
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/16f5ecfd-c06a-40ac-ad7e-79f6aff43298/deploy-status)](https://app.netlify.com/sites/chic-tarsier-becc70/deploys)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+## Tech
+- React - UI
+- Material UI - component library
+- Vite - build tool
+- TypeScript - language
+- Netlify - web hosting/pipelines
+- Auth0 - authentication
