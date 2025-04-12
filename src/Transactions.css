@@ -1,18 +1,23 @@
-.app-picker {
+.app {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   color: black;
   gap: 20px;
 }
 
-.app-picker-header {
+.app-header {
   font-size: calc(10px + 2vmin);
 }
 
-.app-picker-app-id {
+.app-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-selection {
   display: flex;
   flex-direction: row;
   gap: 20px;

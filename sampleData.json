@@ -1,0 +1,42 @@
+[
+  {
+    "amount": 12340,
+    "payee_name": "First",
+    "parent_transaction_id": "12340",
+    "date": "2022-09-01T00:00:00",
+    "decimal_amount": 12.34,
+    "display_amount": "12.34"
+  },
+  {
+    "amount": 123450,
+    "payee_name": "Second",
+    "parent_transaction_id": "123450",
+    "date": "2022-09-02T00:00:00",
+    "decimal_amount": 123.45,
+    "display_amount": "123.45"
+  },
+  {
+    "amount": 1234560,
+    "payee_name": "Third",
+    "parent_transaction_id": "1234560",
+    "date": "2022-09-03T00:00:00",
+    "decimal_amount": 1234.56,
+    "display_amount": "1234.56"
+  },
+  {
+    "amount": 12345670,
+    "payee_name": "Fourth",
+    "parent_transaction_id": "12345670",
+    "date": "2022-09-04T00:00:00",
+    "decimal_amount": 12345.67,
+    "display_amount": "12345.67"
+  },
+  {
+    "amount": 123456780,
+    "payee_name": "Fifth",
+    "parent_transaction_id": "123456780",
+    "date": "2022-09-05T00:00:00",
+    "decimal_amount": 123456.78,
+    "display_amount": "123456.78"
+  }
+]
