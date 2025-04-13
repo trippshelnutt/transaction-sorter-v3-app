@@ -1,0 +1,1 @@
+This is where react assets should go.

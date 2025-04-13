@@ -1,0 +1,1 @@
+This is where public assets should go.
